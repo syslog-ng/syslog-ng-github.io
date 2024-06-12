@@ -257,3 +257,5 @@ footer:
 product:
   name: 'syslog-ng Open Source Edition'
   short_name: 'syslog-ng OSE'
+
+repository: mrgarris0n/syslog-ng.github.io
