@@ -445,7 +445,7 @@ This macro is available in {{ site.product.short_name }} 4.5 and later versions.
   * `unix-stream`
   * `unix-dgram`
 
-* RFC-5424 style syslog `syslog()`:
+* RFC-5424 style syslog [[syslog()|adm-src-syslog]]:
   * RFC-5426: syslog over udp
   * RFC-5425: syslog over tls
   * RFC-6587: syslog over tcp
