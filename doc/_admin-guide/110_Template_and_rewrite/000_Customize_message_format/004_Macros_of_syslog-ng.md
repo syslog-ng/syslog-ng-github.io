@@ -452,7 +452,7 @@ This macro is available in {{ site.product.short_name }} 4.5 and later versions.
   * RFC-5424 + \<custom logproto like altp\>: syslog over a logproto plugin
 
 * Other drivers:
-  * otlp: `otel()` driver
+  * otlp: [[otel() driver|adm-src-optel]]
   * mqtt: `mqtt()` driver
   * hypr-api: `hypr-audit-source()` driver
 
