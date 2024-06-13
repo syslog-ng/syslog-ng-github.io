@@ -434,7 +434,7 @@ An alias of the ${TZOFFSET} macro.
 
 This macro is available in {{ site.product.short_name }} 4.5 and later versions. The {{ site.product.short_name }} application automatically populates this name-value pair with the transport-mechanism used to retrieve the message. The value depends on the source driver that received the message. The implemented values are the following:
 
-* BSD syslog drivers `tcp()`, `udp()` & `network()`
+* BSD syslog drivers [[tcp(), udp()|adm-src-tcp]] & [[network()|adm-src-netw]]
   * RFC-3164 + tls
   * RFC-3164 + tcp
   * RFC-3164 + udp
