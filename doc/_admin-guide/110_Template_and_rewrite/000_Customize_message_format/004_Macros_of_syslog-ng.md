@@ -453,7 +453,7 @@ This macro is available in {{ site.product.short_name }} 4.5 and later versions.
 
 * Other drivers:
   * otlp: [[otel() driver|adm-src-optel]]
-  * mqtt: `mqtt()` driver
+  * mqtt: [[mqtt() driver|adm-src-mqtt]]
   * hypr-api: `hypr-audit-source()` driver
 
 * Locally created logs (available in 4.7 and later versions):
