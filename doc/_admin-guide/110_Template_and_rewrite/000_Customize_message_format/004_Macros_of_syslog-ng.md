@@ -432,7 +432,7 @@ An alias of the ${TZOFFSET} macro.
 
 ## ${TRANSPORT}
 
-This macro is available in syslog-ng OSE 4.5 and later versions. The syslog-ng OSE application automatically populates this name-value pair with the transport-mechanism used to retrieve the message. The value depends on the source driver that received the message. The implemented values are the following:
+This macro is available in {{ site.product.short_name }} 4.5 and later versions. The {{ site.product.short_name }} application automatically populates this name-value pair with the transport-mechanism used to retrieve the message. The value depends on the source driver that received the message. The implemented values are the following:
 
 * BSD syslog drivers `tcp()`, `udp()` & `network()`
   * RFC-3164 + tls
