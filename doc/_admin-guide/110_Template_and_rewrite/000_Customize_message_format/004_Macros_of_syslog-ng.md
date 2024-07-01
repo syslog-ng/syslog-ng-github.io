@@ -435,6 +435,43 @@ database column.
 
 An alias of the ${TZOFFSET} macro.
 
+## ${TRANSPORT}
+
+This macro is available in {{ site.product.short_name }} 4.5 and later versions. The {{ site.product.short_name }} application automatically populates this name-value pair with the transport-mechanism used to retrieve the message. The value depends on the source driver that received the message. The implemented values are the following:
+
+* BSD syslog drivers [[tcp(), udp()|adm-src-tcp]] & [[network()|adm-src-netw]]
+  * RFC-3164 + tls
+  * RFC-3164 + tcp
+  * RFC-3164 + udp
+  * RFC-3164 + proxied-tls
+  * RFC-3164 + \<custom logproto like altp\>
+
+* UNIX domain drivers `unix-dgram()`, `unix-stream()`
+  * `unix-stream`
+  * `unix-dgram`
+
+* RFC-5424 style syslog [[syslog()|adm-src-syslog]]:
+  * RFC-5426: syslog over udp
+  * RFC-5425: syslog over tls
+  * RFC-6587: syslog over tcp
+  * RFC-5424 + \<custom logproto like altp\>: syslog over a logproto plugin
+
+* Other drivers:
+  * otlp: [[otel() driver|adm-src-optel]]
+  * mqtt: [[mqtt() driver|adm-src-mqtt]]
+  * hypr-api: `hypr-audit-source()` driver
+
+* Locally created logs (available in 4.7 and later versions):
+  * `local+unix-stream`
+  * `local+unix-dgram`
+  * `local+file`
+  * `local+pipe`
+  * `local+program`
+  * `local+devkmsg`
+  * `local+journal`
+  * `local+afstreams`
+  * `local+openbsd`
+
 ## ${TZOFFSET}, ${C_TZOFFSET}, ${R_TZOFFSET}, ${S_TZOFFSET}
 
 The time-zone as hour offset from GMT, for example:
